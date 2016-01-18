@@ -4,29 +4,30 @@ A python/django based system for testing c/c++ solutions to algoritmic problems
 ##What it does now:
 * Basic Login/register funtionality
 * Task/test editing
-* Testing  solutions
+* Testing solutions
 * A simple blog
 * Searching by tags
 
-##Required software:
-* Python 3.\*
+##Dependencies:
+* Python 3.\2+
 * Python modules: view requirements.txt
-* g++ compiler
+* c++ compiler (g++, clang++...)
 * postgreSQL
 * rabbitmq
+Refer at your distro's package manager documentation on how to do this properly.
 
 ##How to install:
 0. Clone the repository `git clone https://github.com/Alaxe/judgesystem.git`
 1. Setup database - you have a few options
-    * install postgreSQL `pacman -S postgresql` on Arch Linux
+    * install postgreSQL
     * setup database and user
     ```
     sudo su postgres
     createuser admin -P
     cretadb judgeSystemDB -U admin
     ```
-2. Install rabbitmq `pacman -S rabbitmq` on Arch Linux
-3. Setup settings 
+2. Install rabbitmq
+3. Setup settings
     * create variables in judgeSystem/sens.py
         * `EMAIL` - used for account confirmation
         * `EMAIL_PASSWORD` - password for that account
