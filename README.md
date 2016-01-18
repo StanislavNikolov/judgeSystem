@@ -11,7 +11,7 @@ A python/django based system for testing c/c++ solutions to algoritmic problems
 ##Dependencies:
 * Python 3.\2+
 * Python modules: view requirements.txt
-* c++ compiler (g++, clang++...)
+* g++ for compiling submissions
 * postgreSQL
 * rabbitmq
 Refer at your distro's package manager documentation on how to do this properly.
